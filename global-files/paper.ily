@@ -4,19 +4,7 @@ pagenumcol = \markup {
     \fromproperty #'page:page-number-string
   }
 }
-copyrightcol = \markup {
-  \fill-line {
-    \box \fontsize #-7
-    \column {
-      \line { \simple #(strftime
-                        "© %Y by Heart & Trust Music Engraving"
-                        (localtime (current-time)))}
-      \line { "Educational copying welcome. "
-              #(strftime "(rev. %m-%d)"
-                 (localtime (current-time)))}
-    }
-  }
-}
+copyrightcol = \include "./global-files/copyright.ily"
 
 \paper {
   indent = 8

@@ -2,6 +2,7 @@
 
 #(set-global-staff-size 20)
 
+\include "global-files/gitlink.ily"
 \include "global-files/paper.ily"
 
 \include "frontpage/Frontpage.ly" \pageBreak
