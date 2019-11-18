@@ -1,1 +1,1 @@
-/home/nathanael/Notenverzeichnis/Templates/copyright.ily
+/home/nathanael/Notenverzeichnis/Templates/CopyRight/copyright.ily
