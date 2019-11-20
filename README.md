@@ -1,5 +1,6 @@
 # Louis Köhler
-## 36 easy studies for Piano; Op.190
+## The Very Easiest studies; Op.190
+### 36 easy, progressive studies for Piano two hands; 
 
 from the first beginning by using only five different notes and treble clef,
 to more advanced studies that claim abilities from better note reading to small position changes and left right coordination.
@@ -31,33 +32,38 @@ lilypond filename.ly
 for i in *.ly; do lilypond $i;done
 ```
 
-If you want to get **MIDI** files, you need to add a `\midi {}` blog behind the `\layout` blog  
+If you want to get **MIDI** files, you need to uncomment the `\midi {}` blog behind the `\layout` blog  
 within the `\score` blog like this:
  
 ```
 \score {
-  \new StaffGroup = "" \with {
-        instrumentName = \markup { \bold \huge { \larger "1." }}
-      }
-  <<
-    \new Staff = "celloI" \celloI
-  >>
+
   \layout {}
-  \midi {}
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 100 4)
+    }
+  }
 }
 ```
 
-The **book** files are going to be published when a certain amount of pieces are available,  
-if you want to compile a book with the present pieces use the `make-book.sh` script as follows:
+**Changing the tempo of the MIDI file:**
 
 ```
-#run script in parent directory:
+% you can change the tempo in each file by replacing the 100
+% to a different value:
 
-bash make-book.sh dir/
+  \context {
+    \Score
+    tempoWholesPerMinute = #(ly:make-moment 80 4) %% equals 80 bpm
+  }
 
-#compile book*.ly file with lilpond:
+  \context {
+    \Score
+    tempoWholesPerMinute = #(ly:make-moment 70 4) %% equals 70 bpm
+  }
 
-lilpond Book-dir.ly
 ```
 
 typset with: [Lilypond](http://lilypond.org) "2.18.2"  
