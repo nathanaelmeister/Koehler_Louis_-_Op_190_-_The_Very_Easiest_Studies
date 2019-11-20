@@ -4,6 +4,10 @@
 from the first beginning by using only five different notes and treble clef,
 to more advanced studies that claim abilities from better note reading to small position changes and left right coordination.
 
+![Köhler, Louis - Op.190 book preview image](https://repository-images.githubusercontent.com/222370810/71002680-0b3c-11ea-8a75-e969d0a4dce4)
+
+________________________________________________________________________________
+
 While this collection is on growing, it is only providing the single pieces as [lilypond](http://lilypond.org) *.ly files.  
 **PDF** and **MIDI** files are going to be added within the finalization of the collection to prevent a boost of the .git repository.  
 If you want to get **PDF** files beforehand you need to install [lilypond](http://lilypond.org) and compile the *.ly files.
