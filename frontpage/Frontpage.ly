@@ -43,7 +43,7 @@
   }
 
   \markup \tiny {
-    \vspace #17
+    \vspace #12.5
     \fill-line {
       \hspace #-26
       \column  {

@@ -1,6 +1,7 @@
 \version "2.18.2"
 
-#(set-global-staff-size 20)
+#(set-default-paper-size "a4")
+#(set-global-staff-size 22)
 
 \include "global-files/gitlink.ily"
 \include "global-files/paper.ily"
@@ -40,7 +41,6 @@
   \include "input-files/13.ily"
   \include "input-files/14.ily"
   \include "input-files/15.ily"
-  \pageBreak
   \include "input-files/16.ily"
   \include "input-files/17.ily"
   \include "input-files/18.ily"
@@ -59,7 +59,7 @@
   \include "input-files/22.ily"
   \include "input-files/23.ily"
   \include "input-files/24.ily"
-  \include "input-files/25.ily" %\pageBreak
+  \include "input-files/25.ily"
   \include "input-files/26.ily"
   \include "input-files/27.ily"
   \include "input-files/28.ily"
@@ -69,6 +69,6 @@
   \include "input-files/32.ily"
   \include "input-files/33.ily"
   \include "input-files/34.ily"
-  \include "input-files/35.ily" %\pageBreak
+  \include "input-files/35.ily"
   \include "input-files/36.ily"
 }
