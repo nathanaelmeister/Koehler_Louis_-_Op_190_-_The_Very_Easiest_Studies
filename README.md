@@ -32,39 +32,11 @@ lilypond filename.ly
 for i in *.ly; do lilypond $i;done
 ```
 
-If you want to get **MIDI** files, you need to uncomment the `\midi {}` blog behind the `\layout` blog  
-within the `\score` blog like this:
- 
-```
-\score {
+If you want to get **MIDI** files, you need to compile the files within the `single-page` folder.
+You could batch compile those as described above or just compile the files you need. Please note,
+that the peices up to Nr. 16 are very short educational pieces and you will get a lot of white space
+on the **PDFs**.
 
-  \layout {}
-  \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 100 4)
-    }
-  }
-}
-```
-
-**Changing the tempo of the MIDI file:**
-
-```
-% you can change the tempo in each file by replacing the 100
-% to a different value:
-
-  \context {
-    \Score
-    tempoWholesPerMinute = #(ly:make-moment 80 4) %% equals 80 bpm
-  }
-
-  \context {
-    \Score
-    tempoWholesPerMinute = #(ly:make-moment 70 4) %% equals 70 bpm
-  }
-
-```
 
 typset with: [Lilypond](http://lilypond.org) "2.18.2"  
 
