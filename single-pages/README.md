@@ -4,8 +4,7 @@
 
 If you want to use [LilyPond](http://www.lilypond.org) to compile single pages from this directory,
 you will need to download/clone the whole repository since the actual content is written in other
-files here only used as `includes`.  
-Files such as the `copyright.ily` from `../global-files` or the note content from `input-files/{01..36}.ily`  
+files here only used as `includes`, like `copyright.ily` from `../global-files`.  
 
 To compile these single-page files might not make to much sence for the very short peices in the beginning
 since you will end up with lots of white space on your PDF pages. This procedure seems to be rather
