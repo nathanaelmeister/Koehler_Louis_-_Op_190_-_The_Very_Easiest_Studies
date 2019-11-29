@@ -10,6 +10,6 @@
   tagline = \include "../global-files/copyright.ily"
   pdftitle = "Die allerleichtesten Übungsstücke"
   pdfsubtitle = \markup { "Louis Köhler; Op. 190; Nr." \pieceNumber }
-  pdfcopyright = "by Heart & Trust Music Engraving"
+  pdfcopyright = #(strftime "%Y by Heart & Trust Music Engraving" (localtime (current-time)))
   pdfkeywords = "Score,Piano,Etude,beginner,progressive,easy"
 }
